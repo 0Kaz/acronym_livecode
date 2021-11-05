@@ -99,7 +99,7 @@ def acronymize(sentence)
 end
 ```
 
-Launch our rspec with our tests <h5 style='color: green'>passing</h5> : 
+Launch our rspec with our tests passing : 
 
 ```console
  rspec spec/acronym_spec.rb --color --format doc
