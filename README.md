@@ -54,3 +54,34 @@ gem install rspec
 
 Create a folder called ```spec``` then name your test preferably that way ```program_name_spec.rb```: 
 
+***spec/acronym_spec.rb**
+
+```ruby
+require_relative '../lib/acronym'
+
+describe "Testing our acronimyze method" do 
+    it "should return the acronym of the words" do 
+        expect(acronymize("what the hell")).to eq("WTH")
+    end
+end
+```
+
+It's probably the first time you see this ```require_relative```, we use this method to import other files in our ruby program so that we use them.
+
+There will be more indepth about ```require_relative``` in the coming lectures and challenges ! 
+
+```ruby 
+require_relative '../lib/acronym'
+```
+
+Remember this syntax, our test expresses some basic desired behaviour. 
+
+we ```describe``` our testing method, and ```it``` should do a specific test for us to ```expect``` the result of our application ```to`` ``eq``ual a specific outcome.
+
+```ruby
+describe "Title of our testing method" do 
+    it "should be a description of what we are expecting as a result" do 
+        expect(method_name(parameter)).to eq(expected result)
+    end
+end
+```
