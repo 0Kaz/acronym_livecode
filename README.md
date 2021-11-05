@@ -85,3 +85,31 @@ describe "Title of our testing method" do
     end
 end
 ```
+
+Since the fun is about refactoring our code to be more efficient and simple, let's try it another way: 
+
+```ruby
+def acronymize(sentence)
+  # 1. Split the sentence into words
+  # 2. Initialize an empty array 
+  # 3. Iterate over words, for each word, select the first letter (how?)
+  # 4. Through iteration, store it in the empty Array
+  # 5. Join elements of the array, uppercase it and return it
+  return  sentence.split(" ").map {|l| l[0]}.join("").upcase
+end
+```
+
+Launch our rspec with our tests <h5 style='color: green'>passing</h5> : 
+
+```console
+ rspec spec/acronym_spec.rb --color --format doc
+```
+
+```console
+Testing our acronymize method
+  should return the acronym of the words
+
+Finished in 0.00356 seconds (files took 0.16331 seconds to load)
+1 example, 0 failures
+
+```
