@@ -57,7 +57,7 @@ Create a folder called ```spec``` then name your test preferably that way ```pro
 ***spec/acronym_spec.rb**
 
 ```ruby
-require_relative '../lib/acronym'
+require 'acronym'
 
 describe "Testing our acronimyze method" do 
     it "should return the acronym of the words" do 
@@ -66,12 +66,12 @@ describe "Testing our acronimyze method" do
 end
 ```
 
-It's probably the first time you see this ```require_relative```, we use this method to import other files in our ruby program so that we use them.
+You already got familiar with ```require_relative``` or ```require``` in few previous challenges, we use this method to import other ruby files and use different methods existing in a different file.
 
-There will be more indepth about ```require_relative``` in the coming lectures and challenges ! 
+There will be more indepth about ```require_relative``` or ```require``` in the upcoming lectures and challenges ! 
 
 ```ruby 
-require_relative '../lib/acronym'
+require 'acronym'
 ```
 
 Remember this syntax, our test expresses some basic desired behaviour. 
