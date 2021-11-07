@@ -66,7 +66,7 @@ describe "Testing our acronimyze method" do
 end
 ```
 
-You already got familiar with ```require_relative``` or ```require``` in few previous challenges, we use this method to import other ruby files and use different methods existing in a different file.
+You already got familiar with ```require_relative``` or ```require``` in few previous challenges, we use this built-in Ruby method to load other ruby files and executes its statements.
 
 There will be more indepth about ```require_relative``` or ```require``` in the upcoming lectures and challenges ! 
 
